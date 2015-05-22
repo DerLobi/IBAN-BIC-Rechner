@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blzTextField: UITextField!
+    @IBOutlet weak var ktoTextField: UITextField!
+    
+    @IBOutlet weak var ibanLabel: UILabel!
+    @IBOutlet weak var bicLabel: UILabel!
+    
+    var viewModel: ViewModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        viewModel = ViewModel()
+        blzTextField.becomeFirstResponder()
+        
+        blzTextField.rx_text().subscribe(viewModel.BLZ)
+        ktoTextField.rx_text().subscribe(viewModel.accountNumber)
+        
+        ibanLabel.rx_subscribeTextTo(viewModel.IBAN)        
+        bicLabel.rx_subscribeTextTo(viewModel.BIC)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

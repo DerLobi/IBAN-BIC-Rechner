@@ -1,0 +1,4 @@
+github "robrix/Box" "1.2.2"
+github "naoty/SwiftCSV" "0.1.1"
+github "antitypical/Result" "0.4.3"
+github "ReactiveCocoa/ReactiveCocoa" "v3.0-beta.5"

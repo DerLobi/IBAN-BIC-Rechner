@@ -1,0 +1,4 @@
+100000001Bundesbank                                                10591Berlin                             BBk Berlin                 20100MARKDEF110009011380U000000000
+395501101Sparkasse Düren                                           52324Düren, Rheinl                      Sparkasse Düren            53101SDUEDE33XXX00005241U000000000
+100601981Pax-Bank                                                  14005Berlin                             Pax-Bank Berlin            61335GENODED1PA606047622U137060193
+888888881NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN55555CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCSSSSSSSSSSSSSSSSSSSSSSSSSSS55555BICBICBIXXX00000000U100000000

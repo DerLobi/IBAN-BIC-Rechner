@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CADF91F81B0FB7CA00D65731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF91F71B0FB7CA00D65731 /* AppDelegate.swift */; };
+		CADF91FA1B0FB7CA00D65731 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF91F91B0FB7CA00D65731 /* ConversionViewController.swift */; };
+		CADF91FC1B0FB7CA00D65731 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADF91FB1B0FB7CA00D65731 /* Images.xcassets */; };
+		CADF91FF1B0FB7CA00D65731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADF91FD1B0FB7CA00D65731 /* Main.storyboard */; };
+		CADF920B1B0FB7CA00D65731 /* BICDataConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF920A1B0FB7CA00D65731 /* BICDataConverterTests.swift */; };
+		CADF92151B0FB7F600D65731 /* IBANBICCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADF92141B0FB7F600D65731 /* IBANBICCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CADF92051B0FB7CA00D65731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CADF91EA1B0FB7CA00D65731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CADF91F11B0FB7CA00D65731;
+			remoteInfo = BICDataConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CADF91F21B0FB7CA00D65731 /* BICDataConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BICDataConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADF91F61B0FB7CA00D65731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADF91F71B0FB7CA00D65731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CADF91F91B0FB7CA00D65731 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		CADF91FB1B0FB7CA00D65731 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CADF91FE1B0FB7CA00D65731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CADF92041B0FB7CA00D65731 /* BICDataConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BICDataConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADF92091B0FB7CA00D65731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADF920A1B0FB7CA00D65731 /* BICDataConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICDataConverterTests.swift; sourceTree = "<group>"; };
+		CADF92141B0FB7F600D65731 /* IBANBICCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBANBICCore.framework; path = "/Users/lobi/Projekte/IBAN BIC Rechner/IBANBICCore/../build/Debug/IBANBICCore.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CADF91EF1B0FB7CA00D65731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADF92151B0FB7F600D65731 /* IBANBICCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADF92011B0FB7CA00D65731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CADF91E91B0FB7CA00D65731 = {
+			isa = PBXGroup;
+			children = (
+				CADF92141B0FB7F600D65731 /* IBANBICCore.framework */,
+				CADF91F41B0FB7CA00D65731 /* BICDataConverter */,
+				CADF92071B0FB7CA00D65731 /* BICDataConverterTests */,
+				CADF91F31B0FB7CA00D65731 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CADF91F31B0FB7CA00D65731 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CADF91F21B0FB7CA00D65731 /* BICDataConverter.app */,
+				CADF92041B0FB7CA00D65731 /* BICDataConverterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CADF91F41B0FB7CA00D65731 /* BICDataConverter */ = {
+			isa = PBXGroup;
+			children = (
+				CADF91F71B0FB7CA00D65731 /* AppDelegate.swift */,
+				CADF91F91B0FB7CA00D65731 /* ConversionViewController.swift */,
+				CADF91FB1B0FB7CA00D65731 /* Images.xcassets */,
+				CADF91FD1B0FB7CA00D65731 /* Main.storyboard */,
+				CADF91F51B0FB7CA00D65731 /* Supporting Files */,
+			);
+			path = BICDataConverter;
+			sourceTree = "<group>";
+		};
+		CADF91F51B0FB7CA00D65731 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CADF91F61B0FB7CA00D65731 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CADF92071B0FB7CA00D65731 /* BICDataConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CADF920A1B0FB7CA00D65731 /* BICDataConverterTests.swift */,
+				CADF92081B0FB7CA00D65731 /* Supporting Files */,
+			);
+			path = BICDataConverterTests;
+			sourceTree = "<group>";
+		};
+		CADF92081B0FB7CA00D65731 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CADF92091B0FB7CA00D65731 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CADF91F11B0FB7CA00D65731 /* BICDataConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CADF920E1B0FB7CA00D65731 /* Build configuration list for PBXNativeTarget "BICDataConverter" */;
+			buildPhases = (
+				CADF91EE1B0FB7CA00D65731 /* Sources */,
+				CADF91EF1B0FB7CA00D65731 /* Frameworks */,
+				CADF91F01B0FB7CA00D65731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BICDataConverter;
+			productName = BICDataConverter;
+			productReference = CADF91F21B0FB7CA00D65731 /* BICDataConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CADF92031B0FB7CA00D65731 /* BICDataConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CADF92111B0FB7CA00D65731 /* Build configuration list for PBXNativeTarget "BICDataConverterTests" */;
+			buildPhases = (
+				CADF92001B0FB7CA00D65731 /* Sources */,
+				CADF92011B0FB7CA00D65731 /* Frameworks */,
+				CADF92021B0FB7CA00D65731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CADF92061B0FB7CA00D65731 /* PBXTargetDependency */,
+			);
+			name = BICDataConverterTests;
+			productName = BICDataConverterTests;
+			productReference = CADF92041B0FB7CA00D65731 /* BICDataConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CADF91EA1B0FB7CA00D65731 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Christian Lobach";
+				TargetAttributes = {
+					CADF91F11B0FB7CA00D65731 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CADF92031B0FB7CA00D65731 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CADF91F11B0FB7CA00D65731;
+					};
+				};
+			};
+			buildConfigurationList = CADF91ED1B0FB7CA00D65731 /* Build configuration list for PBXProject "BICDataConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CADF91E91B0FB7CA00D65731;
+			productRefGroup = CADF91F31B0FB7CA00D65731 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CADF91F11B0FB7CA00D65731 /* BICDataConverter */,
+				CADF92031B0FB7CA00D65731 /* BICDataConverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CADF91F01B0FB7CA00D65731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADF91FC1B0FB7CA00D65731 /* Images.xcassets in Resources */,
+				CADF91FF1B0FB7CA00D65731 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADF92021B0FB7CA00D65731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CADF91EE1B0FB7CA00D65731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADF91FA1B0FB7CA00D65731 /* ConversionViewController.swift in Sources */,
+				CADF91F81B0FB7CA00D65731 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADF92001B0FB7CA00D65731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADF920B1B0FB7CA00D65731 /* BICDataConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CADF92061B0FB7CA00D65731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CADF91F11B0FB7CA00D65731 /* BICDataConverter */;
+			targetProxy = CADF92051B0FB7CA00D65731 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CADF91FD1B0FB7CA00D65731 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADF91FE1B0FB7CA00D65731 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CADF920C1B0FB7CA00D65731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CADF920D1B0FB7CA00D65731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CADF920F1B0FB7CA00D65731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lobi/Projekte/IBAN,
+					BIC,
+					Rechner/IBANBICCore/../build/Debug,
+				);
+				INFOPLIST_FILE = BICDataConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CADF92101B0FB7CA00D65731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lobi/Projekte/IBAN,
+					BIC,
+					Rechner/IBANBICCore/../build/Debug,
+				);
+				INFOPLIST_FILE = BICDataConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CADF92121B0FB7CA00D65731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BICDataConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BICDataConverter.app/Contents/MacOS/BICDataConverter";
+			};
+			name = Debug;
+		};
+		CADF92131B0FB7CA00D65731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BICDataConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BICDataConverter.app/Contents/MacOS/BICDataConverter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CADF91ED1B0FB7CA00D65731 /* Build configuration list for PBXProject "BICDataConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADF920C1B0FB7CA00D65731 /* Debug */,
+				CADF920D1B0FB7CA00D65731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CADF920E1B0FB7CA00D65731 /* Build configuration list for PBXNativeTarget "BICDataConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADF920F1B0FB7CA00D65731 /* Debug */,
+				CADF92101B0FB7CA00D65731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CADF92111B0FB7CA00D65731 /* Build configuration list for PBXNativeTarget "BICDataConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADF92121B0FB7CA00D65731 /* Debug */,
+				CADF92131B0FB7CA00D65731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CADF91EA1B0FB7CA00D65731 /* Project object */;
+}

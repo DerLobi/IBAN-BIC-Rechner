@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA46FDC61B0F9DDE005CE0B2 /* IBANBICCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CA46FDC51B0F9DDE005CE0B2 /* IBANBICCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA46FDCC1B0F9DDE005CE0B2 /* IBANBICCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA46FDC01B0F9DDE005CE0B2 /* IBANBICCore.framework */; };
+		CA46FDDD1B0F9E18005CE0B2 /* BICEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46FDDC1B0F9E18005CE0B2 /* BICEntry.swift */; };
+		CA46FDE01B0F9E65005CE0B2 /* blz_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA46FDDF1B0F9E65005CE0B2 /* blz_input.txt */; };
+		CA46FDEB1B0F9E9D005CE0B2 /* IBANBICCore-OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = CA46FDEA1B0F9E9D005CE0B2 /* IBANBICCore-OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA46FDFF1B0F9EA5005CE0B2 /* BICEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46FDDC1B0F9E18005CE0B2 /* BICEntry.swift */; };
+		CA46FE0A1B0FA0D2005CE0B2 /* BICEntrySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46FE091B0FA0D2005CE0B2 /* BICEntrySpec.swift */; };
+		CA5451631B0FBCA5008C0594 /* InputFileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5451621B0FBCA5008C0594 /* InputFileConverter.swift */; };
+		CA5451641B0FBCA5008C0594 /* InputFileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5451621B0FBCA5008C0594 /* InputFileConverter.swift */; };
+		CACC58D91B0FAAFA00E9E450 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA72682D1B0FA9930058D341 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CACC58DA1B0FAAFA00E9E450 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA72682E1B0FA9930058D341 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CACC58DB1B0FAAFA00E9E450 /* IBANBICCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA46FDC01B0F9DDE005CE0B2 /* IBANBICCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA72683A1B0FAA420058D341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA46FDB71B0F9DDE005CE0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA46FDBF1B0F9DDE005CE0B2;
+			remoteInfo = "IBANBICCore-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA7267F31B0FA2190058D341 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CACC58D91B0FAAFA00E9E450 /* Nimble.framework in CopyFiles */,
+				CACC58DA1B0FAAFA00E9E450 /* Quick.framework in CopyFiles */,
+				CACC58DB1B0FAAFA00E9E450 /* IBANBICCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7268331B0FA9A80058D341 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA46FDC01B0F9DDE005CE0B2 /* IBANBICCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBANBICCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA46FDC41B0F9DDE005CE0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA46FDC51B0F9DDE005CE0B2 /* IBANBICCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBANBICCore.h; sourceTree = "<group>"; };
+		CA46FDCB1B0F9DDE005CE0B2 /* IBANBICCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBANBICCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA46FDD11B0F9DDE005CE0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA46FDDC1B0F9E18005CE0B2 /* BICEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BICEntry.swift; sourceTree = "<group>"; };
+		CA46FDDF1B0F9E65005CE0B2 /* blz_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blz_input.txt; sourceTree = "<group>"; };
+		CA46FDE61B0F9E9D005CE0B2 /* IBANBICCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBANBICCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA46FDE91B0F9E9D005CE0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA46FDEA1B0F9E9D005CE0B2 /* IBANBICCore-OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBANBICCore-OSX.h"; sourceTree = "<group>"; };
+		CA46FE091B0FA0D2005CE0B2 /* BICEntrySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BICEntrySpec.swift; sourceTree = "<group>"; };
+		CA5451621B0FBCA5008C0594 /* InputFileConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFileConverter.swift; sourceTree = "<group>"; };
+		CA72682D1B0FA9930058D341 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		CA72682E1B0FA9930058D341 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA46FDBC1B0F9DDE005CE0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDC81B0F9DDE005CE0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FDCC1B0F9DDE005CE0B2 /* IBANBICCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDE21B0F9E9D005CE0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA46FDB61B0F9DDE005CE0B2 = {
+			isa = PBXGroup;
+			children = (
+				CA7267FD1B0FA29F0058D341 /* Frameworks */,
+				CA46FDC21B0F9DDE005CE0B2 /* IBANBICCore */,
+				CA46FDCF1B0F9DDE005CE0B2 /* IBANBICCoreTests */,
+				CA46FDE71B0F9E9D005CE0B2 /* IBANBICCore-OSX */,
+				CA46FDC11B0F9DDE005CE0B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA46FDC11B0F9DDE005CE0B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDC01B0F9DDE005CE0B2 /* IBANBICCore.framework */,
+				CA46FDCB1B0F9DDE005CE0B2 /* IBANBICCoreTests.xctest */,
+				CA46FDE61B0F9E9D005CE0B2 /* IBANBICCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA46FDC21B0F9DDE005CE0B2 /* IBANBICCore */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FE001B0F9EDC005CE0B2 /* Shared */,
+				CA46FDC51B0F9DDE005CE0B2 /* IBANBICCore.h */,
+				CA46FDC31B0F9DDE005CE0B2 /* Supporting Files */,
+			);
+			path = IBANBICCore;
+			sourceTree = "<group>";
+		};
+		CA46FDC31B0F9DDE005CE0B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDC41B0F9DDE005CE0B2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA46FDCF1B0F9DDE005CE0B2 /* IBANBICCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FE091B0FA0D2005CE0B2 /* BICEntrySpec.swift */,
+				CA46FDDE1B0F9E46005CE0B2 /* Fixtures */,
+				CA46FDD01B0F9DDE005CE0B2 /* Supporting Files */,
+			);
+			path = IBANBICCoreTests;
+			sourceTree = "<group>";
+		};
+		CA46FDD01B0F9DDE005CE0B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDD11B0F9DDE005CE0B2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA46FDDE1B0F9E46005CE0B2 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDDF1B0F9E65005CE0B2 /* blz_input.txt */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		CA46FDE71B0F9E9D005CE0B2 /* IBANBICCore-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDEA1B0F9E9D005CE0B2 /* IBANBICCore-OSX.h */,
+				CA46FDE81B0F9E9D005CE0B2 /* Supporting Files */,
+			);
+			path = "IBANBICCore-OSX";
+			sourceTree = "<group>";
+		};
+		CA46FDE81B0F9E9D005CE0B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDE91B0F9E9D005CE0B2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA46FE001B0F9EDC005CE0B2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CA46FDDC1B0F9E18005CE0B2 /* BICEntry.swift */,
+				CA5451621B0FBCA5008C0594 /* InputFileConverter.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CA7267FD1B0FA29F0058D341 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA72682D1B0FA9930058D341 /* Nimble.framework */,
+				CA72682E1B0FA9930058D341 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA46FDBD1B0F9DDE005CE0B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FDC61B0F9DDE005CE0B2 /* IBANBICCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDE31B0F9E9D005CE0B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FDEB1B0F9E9D005CE0B2 /* IBANBICCore-OSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA46FDBF1B0F9DDE005CE0B2 /* IBANBICCore-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA46FDD61B0F9DDE005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICCore-iOS" */;
+			buildPhases = (
+				CA46FDBB1B0F9DDE005CE0B2 /* Sources */,
+				CA46FDBC1B0F9DDE005CE0B2 /* Frameworks */,
+				CA46FDBD1B0F9DDE005CE0B2 /* Headers */,
+				CA46FDBE1B0F9DDE005CE0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBANBICCore-iOS";
+			productName = IBANBICCore;
+			productReference = CA46FDC01B0F9DDE005CE0B2 /* IBANBICCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA46FDCA1B0F9DDE005CE0B2 /* IBANBICCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA46FDD91B0F9DDE005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICCoreTests" */;
+			buildPhases = (
+				CA46FDC71B0F9DDE005CE0B2 /* Sources */,
+				CA46FDC81B0F9DDE005CE0B2 /* Frameworks */,
+				CA46FDC91B0F9DDE005CE0B2 /* Resources */,
+				CA7267F31B0FA2190058D341 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA72683B1B0FAA420058D341 /* PBXTargetDependency */,
+			);
+			name = IBANBICCoreTests;
+			productName = IBANBICCoreTests;
+			productReference = CA46FDCB1B0F9DDE005CE0B2 /* IBANBICCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA46FDE51B0F9E9D005CE0B2 /* IBANBICCore-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA46FDF91B0F9E9D005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICCore-OSX" */;
+			buildPhases = (
+				CA46FDE11B0F9E9D005CE0B2 /* Sources */,
+				CA46FDE21B0F9E9D005CE0B2 /* Frameworks */,
+				CA46FDE31B0F9E9D005CE0B2 /* Headers */,
+				CA46FDE41B0F9E9D005CE0B2 /* Resources */,
+				CA7268331B0FA9A80058D341 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBANBICCore-OSX";
+			productName = "IBANBICCore-OSX";
+			productReference = CA46FDE61B0F9E9D005CE0B2 /* IBANBICCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA46FDB71B0F9DDE005CE0B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Christian Lobach";
+				TargetAttributes = {
+					CA46FDBF1B0F9DDE005CE0B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CA46FDCA1B0F9DDE005CE0B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CA46FDE51B0F9E9D005CE0B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = CA46FDBA1B0F9DDE005CE0B2 /* Build configuration list for PBXProject "IBANBICCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA46FDB61B0F9DDE005CE0B2;
+			productRefGroup = CA46FDC11B0F9DDE005CE0B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA46FDBF1B0F9DDE005CE0B2 /* IBANBICCore-iOS */,
+				CA46FDCA1B0F9DDE005CE0B2 /* IBANBICCoreTests */,
+				CA46FDE51B0F9E9D005CE0B2 /* IBANBICCore-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA46FDBE1B0F9DDE005CE0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDC91B0F9DDE005CE0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FDE01B0F9E65005CE0B2 /* blz_input.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDE41B0F9E9D005CE0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA46FDBB1B0F9DDE005CE0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FDDD1B0F9E18005CE0B2 /* BICEntry.swift in Sources */,
+				CA5451631B0FBCA5008C0594 /* InputFileConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDC71B0F9DDE005CE0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FE0A1B0FA0D2005CE0B2 /* BICEntrySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA46FDE11B0F9E9D005CE0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA46FDFF1B0F9EA5005CE0B2 /* BICEntry.swift in Sources */,
+				CA5451641B0FBCA5008C0594 /* InputFileConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA72683B1B0FAA420058D341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA46FDBF1B0F9DDE005CE0B2 /* IBANBICCore-iOS */;
+			targetProxy = CA72683A1B0FAA420058D341 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA46FDD41B0F9DDE005CE0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA46FDD51B0F9DDE005CE0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA46FDD71B0F9DDE005CE0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBANBICCore/Supporting Files/Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = IBANBICCore;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA46FDD81B0F9DDE005CE0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBANBICCore/Supporting Files/Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = IBANBICCore;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA46FDDA1B0F9DDE005CE0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IBANBICCoreTests/Supporting Files/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA46FDDB1B0F9DDE005CE0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "IBANBICCoreTests/Supporting Files/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CA46FDFA1B0F9E9D005CE0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IBANBICCore-OSX/Supporting Files/Info.plist";
+				INSTALL_PATH = "${LOCAL_LIBRARY_DIR}/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = IBANBICCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SYMROOT = "${PROJECT_DIR}/../build";
+			};
+			name = Debug;
+		};
+		CA46FDFB1B0F9E9D005CE0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "IBANBICCore-OSX/Supporting Files/Info.plist";
+				INSTALL_PATH = "${LOCAL_LIBRARY_DIR}/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = IBANBICCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SYMROOT = "${PROJECT_DIR}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA46FDBA1B0F9DDE005CE0B2 /* Build configuration list for PBXProject "IBANBICCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA46FDD41B0F9DDE005CE0B2 /* Debug */,
+				CA46FDD51B0F9DDE005CE0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA46FDD61B0F9DDE005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICCore-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA46FDD71B0F9DDE005CE0B2 /* Debug */,
+				CA46FDD81B0F9DDE005CE0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA46FDD91B0F9DDE005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA46FDDA1B0F9DDE005CE0B2 /* Debug */,
+				CA46FDDB1B0F9DDE005CE0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA46FDF91B0F9E9D005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICCore-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA46FDFA1B0F9E9D005CE0B2 /* Debug */,
+				CA46FDFB1B0F9E9D005CE0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA46FDB71B0F9DDE005CE0B2 /* Project object */;
+}

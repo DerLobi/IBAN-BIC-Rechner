@@ -18,7 +18,9 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
 
         viewModel = InfoViewModel()
-        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
 
     

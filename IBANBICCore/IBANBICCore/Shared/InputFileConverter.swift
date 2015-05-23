@@ -70,8 +70,8 @@ public class InputFileConverter: NSObject {
         
         let csvEntries = entries.map({ $0.toCSV() })
         
-        let entriesString =  join("\n", csvEntries)
-        
+        var entriesString =  join("\n", csvEntries)
+        entriesString = "\(BICEntry.csvHeaders)\n\(entriesString)"
 
         entriesString.writeToURL(outputURL!, atomically: true, encoding: NSUTF8StringEncoding, error: &localError)
         

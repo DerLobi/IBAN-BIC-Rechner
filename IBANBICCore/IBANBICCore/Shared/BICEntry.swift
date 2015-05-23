@@ -45,7 +45,7 @@ private func parseField(input: String, #startIndex: Int, #endIndex: Int) -> Stri
 
 //MARK: CSV conversion
 extension BICEntry {
-    public static let csvHeaders = ["BLZ", "name", "city", "shortName", "BIC"]
+    public static let csvHeaders = "BLZ;name;city;shortName;BIC"
     
     public init (fields: [String: String]) {
         BLZ = fields["BLZ"]!

@@ -23,7 +23,7 @@ class ViewModel: NSObject {
     var city: Variable<String>
     
     
-    var BICEntries: [BICEntry]?
+    private var BICEntries: [BICEntry]?
     
     override init() {
         BLZ = Variable<String>()
@@ -37,23 +37,38 @@ class ViewModel: NSObject {
 
         super.init()
         
-        BLZ >- map({ [weak self] blz in
-                        
+        var currentEntry = BLZ >- map { [weak self] blz -> BICEntry? in
             if let BICEntries = self?.BICEntries {
-                
                 var entries = BICEntries.filter({
                     $0.BLZ == blz
                 })
                 
                 let entry = entries.first
-                return entry?.BIC ?? ""
-
+                return entry
             }
-                        
-            return ""
-        }) >- subscribeNext({ [weak self] bic in
+            
+            return nil
+        }
+
+        currentEntry
+            >- map { $0?.BIC ?? "" }
+            >- subscribeNext({ [weak self] bic in
             self!.BIC << bic
         })
+
+        currentEntry
+            >- map { $0?.shortName ?? "" }
+            >- subscribeNext({ [weak self] name in
+                self!.bankName << name
+                })
+
+        currentEntry
+            >- map { $0?.city ?? "" }
+            >- subscribeNext({ [weak self] city in
+                self!.city << city
+                })
+        
+        //TODO: calculate IBAN
         
         var subscription = combineLatest(BLZ, accountNumber, {
             return IBANfrom(blz: $0, accountNumber: $1)

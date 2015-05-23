@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var ibanLabel: UILabel!
     @IBOutlet weak var bicLabel: UILabel!
     
+    @IBOutlet weak var bankNameLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    
     var viewModel: ViewModel!
 
     override func viewDidLoad() {
@@ -31,7 +34,10 @@ class ViewController: UIViewController {
         
         ibanLabel.rx_subscribeTextTo(viewModel.IBAN)        
         bicLabel.rx_subscribeTextTo(viewModel.BIC)
-    }
 
+        bankNameLabel.rx_subscribeTextTo(viewModel.bankName)
+        cityLabel.rx_subscribeTextTo(viewModel.city)
+
+    }
 }
 

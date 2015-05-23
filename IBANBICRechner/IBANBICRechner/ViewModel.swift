@@ -70,11 +70,13 @@ class ViewModel: NSObject {
         
         //TODO: calculate IBAN
         
-        var subscription = combineLatest(BLZ, accountNumber, {
-            return IBANfrom(blz: $0, accountNumber: $1)
-        }) >- map({ $0  // If I leave this out, it crashes in `CombineLatestObserver`, no idea why
-        }) >- subscribeNext({ [weak self] iban in
-            self!.IBAN << iban
+        var subscription = combineLatest(BLZ >- filter({ count($0) == 8 }),
+                                         accountNumber >- filter({ count($0) > 1 }),
+            {
+                return IBANConverter.calculateIBAN(BLZ: $0, account: $1) })
+            >- map({ $0 })// If I leave this out, it crashes in `CombineLatestObserver`, no idea why
+            >- subscribeNext({ [weak self] iban in
+                self!.IBAN << iban
             })
         
         loadBICs()
@@ -97,9 +99,5 @@ class ViewModel: NSObject {
     }
     
     
-}
-
-private func IBANfrom(#blz: String, #accountNumber: String) -> String {
-    return "\(blz) \(accountNumber)"
 }
 

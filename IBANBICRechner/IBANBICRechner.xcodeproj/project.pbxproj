@@ -14,10 +14,10 @@
 		CA46FD6D1B0E6BDA005CE0B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA46FD6C1B0E6BDA005CE0B2 /* Images.xcassets */; };
 		CA46FD701B0E6BDA005CE0B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA46FD6E1B0E6BDA005CE0B2 /* LaunchScreen.xib */; };
 		CA46FD7C1B0E6BDB005CE0B2 /* IBANBICRechnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46FD7B1B0E6BDB005CE0B2 /* IBANBICRechnerTests.swift */; };
-		CA46FD8D1B0E7016005CE0B2 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = CA46FD8C1B0E7016005CE0B2 /* data.csv */; };
 		CADF91781B0FAC9500D65731 /* IBANBICCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADF91771B0FAC9500D65731 /* IBANBICCore.framework */; };
 		CADF91881B0FAD5200D65731 /* IBANBICCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CADF91801B0FAD2700D65731 /* IBANBICCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAE2FD071B0FDCDF00C16C6B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD061B0FDCDF00C16C6B /* ViewModel.swift */; };
+		CAE2FD091B0FEE5100C16C6B /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = CAE2FD081B0FEE5100C16C6B /* data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,11 +84,11 @@
 		CA46FD751B0E6BDB005CE0B2 /* IBANBICRechnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBANBICRechnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA46FD7A1B0E6BDB005CE0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA46FD7B1B0E6BDB005CE0B2 /* IBANBICRechnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBANBICRechnerTests.swift; sourceTree = "<group>"; };
-		CA46FD8C1B0E7016005CE0B2 /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 		CA4F32077D05D2035C3F019D /* Pods-IBANBICRechner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBANBICRechner.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IBANBICRechner/Pods-IBANBICRechner.debug.xcconfig"; sourceTree = "<group>"; };
 		CADF91771B0FAC9500D65731 /* IBANBICCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBANBICCore.framework; path = "../IBANBICCore/build/Debug-iphoneos/IBANBICCore.framework"; sourceTree = "<group>"; };
 		CADF91791B0FAD2700D65731 /* IBANBICCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBANBICCore.xcodeproj; path = ../IBANBICCore/IBANBICCore.xcodeproj; sourceTree = "<group>"; };
 		CAE2FD061B0FDCDF00C16C6B /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CAE2FD081B0FEE5100C16C6B /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +200,8 @@
 		CA46FD8F1B0E7032005CE0B2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CAE2FD081B0FEE5100C16C6B /* data.csv */,
 				CA46FD6C1B0E6BDA005CE0B2 /* Images.xcassets */,
-				CA46FD8C1B0E7016005CE0B2 /* data.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA46FD8D1B0E7016005CE0B2 /* data.csv in Resources */,
+				CAE2FD091B0FEE5100C16C6B /* data.csv in Resources */,
 				CA46FD6B1B0E6BDA005CE0B2 /* Main.storyboard in Resources */,
 				CA46FD701B0E6BDA005CE0B2 /* LaunchScreen.xib in Resources */,
 				CA46FD6D1B0E6BDA005CE0B2 /* Images.xcassets in Resources */,

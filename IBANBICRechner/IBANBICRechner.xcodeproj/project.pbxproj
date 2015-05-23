@@ -18,6 +18,9 @@
 		CADF91881B0FAD5200D65731 /* IBANBICCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CADF91801B0FAD2700D65731 /* IBANBICCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAE2FD071B0FDCDF00C16C6B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD061B0FDCDF00C16C6B /* ViewModel.swift */; };
 		CAE2FD091B0FEE5100C16C6B /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = CAE2FD081B0FEE5100C16C6B /* data.csv */; };
+		CAE2FD0F1B111A1000C16C6B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD0E1B111A1000C16C6B /* InfoViewController.swift */; };
+		CAE2FD111B1127A100C16C6B /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD101B1127A100C16C6B /* InfoViewModel.swift */; };
+		CAE2FD131B112A9800C16C6B /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD121B112A9800C16C6B /* License.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		CADF91791B0FAD2700D65731 /* IBANBICCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBANBICCore.xcodeproj; path = ../IBANBICCore/IBANBICCore.xcodeproj; sourceTree = "<group>"; };
 		CAE2FD061B0FDCDF00C16C6B /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CAE2FD081B0FEE5100C16C6B /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
+		CAE2FD0E1B111A1000C16C6B /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		CAE2FD101B1127A100C16C6B /* InfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		CAE2FD121B112A9800C16C6B /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,11 +160,14 @@
 			isa = PBXGroup;
 			children = (
 				CA46FD651B0E6BDA005CE0B2 /* AppDelegate.swift */,
-				CA46FD671B0E6BDA005CE0B2 /* ViewController.swift */,
-				CA46FD8E1B0E7029005CE0B2 /* Views */,
+				CAE2FD0E1B111A1000C16C6B /* InfoViewController.swift */,
 				CA46FD8F1B0E7032005CE0B2 /* Resources */,
 				CA46FD631B0E6BDA005CE0B2 /* Supporting Files */,
+				CA46FD671B0E6BDA005CE0B2 /* ViewController.swift */,
 				CAE2FD061B0FDCDF00C16C6B /* ViewModel.swift */,
+				CA46FD8E1B0E7029005CE0B2 /* Views */,
+				CAE2FD101B1127A100C16C6B /* InfoViewModel.swift */,
+				CAE2FD121B112A9800C16C6B /* License.swift */,
 			);
 			path = IBANBICRechner;
 			sourceTree = "<group>";
@@ -400,9 +409,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE2FD111B1127A100C16C6B /* InfoViewModel.swift in Sources */,
 				CA46FD681B0E6BDA005CE0B2 /* ViewController.swift in Sources */,
 				CAE2FD071B0FDCDF00C16C6B /* ViewModel.swift in Sources */,
+				CAE2FD0F1B111A1000C16C6B /* InfoViewController.swift in Sources */,
 				CA46FD661B0E6BDA005CE0B2 /* AppDelegate.swift in Sources */,
+				CAE2FD131B112A9800C16C6B /* License.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

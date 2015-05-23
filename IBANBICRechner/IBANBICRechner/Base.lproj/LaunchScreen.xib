@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylS-ax-6Ti">
-                    <rect key="frame" x="8" y="183" width="464" height="114"/>
+                    <rect key="frame" x="8" y="63" width="464" height="114"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="114" id="GQZ-0w-dIJ"/>
                     </constraints>
@@ -24,7 +25,7 @@ Rechner</string>
             </subviews>
             <color key="backgroundColor" red="0.1333333333" green="0.49019607840000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="ylS-ax-6Ti" secondAttribute="centerY" id="FTL-k7-r9H"/>
+                <constraint firstAttribute="centerY" secondItem="ylS-ax-6Ti" secondAttribute="centerY" multiplier="2" id="FTL-k7-r9H"/>
                 <constraint firstItem="ylS-ax-6Ti" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fPP-Gb-Vpc"/>
                 <constraint firstAttribute="trailing" secondItem="ylS-ax-6Ti" secondAttribute="trailing" constant="8" id="wL2-BK-4uX"/>
             </constraints>

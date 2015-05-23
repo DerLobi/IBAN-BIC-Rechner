@@ -21,13 +21,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var bankNameLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
+    @IBOutlet var spacingConstraints: [NSLayoutConstraint]!
+    
+    @IBOutlet var labelHeightConstraints: [NSLayoutConstraint]!
+    
     var viewModel: ViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel = ViewModel()
-        blzTextField.becomeFirstResponder()
+        ktoTextField.becomeFirstResponder()
         
         blzTextField.rx_text().subscribe(viewModel.BLZ)
         ktoTextField.rx_text().subscribe(viewModel.accountNumber)
@@ -37,7 +41,32 @@ class ViewController: UIViewController {
 
         bankNameLabel.rx_subscribeTextTo(viewModel.bankName)
         cityLabel.rx_subscribeTextTo(viewModel.city)
-
+        
+        updateUIForSmallDevices()
+    }
+    
+    private func updateUIForSmallDevices() {
+        
+        let height = CGRectGetHeight(UIScreen.mainScreen().bounds)
+        if height > 480 {
+            return
+        }
+        
+        for constraint in spacingConstraints {
+            constraint.constant = 4
+        }
+        
+        for constraint in labelHeightConstraints {
+            constraint.constant = 25
+        }
+        
+        var labelFont = ibanLabel.font;
+        labelFont = UIFont(name: labelFont.fontName, size: 26)
+        
+        ibanLabel.font = labelFont
+        bicLabel.font = labelFont
+        bankNameLabel.font = labelFont
+        cityLabel.font = labelFont
     }
 }
 

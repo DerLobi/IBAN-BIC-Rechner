@@ -19,6 +19,8 @@
 		CACC58D91B0FAAFA00E9E450 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA72682D1B0FA9930058D341 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CACC58DA1B0FAAFA00E9E450 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA72682E1B0FA9930058D341 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CACC58DB1B0FAAFA00E9E450 /* IBANBICCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA46FDC01B0F9DDE005CE0B2 /* IBANBICCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAE2FD0B1B10D18E00C16C6B /* IBANConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD0A1B10D18E00C16C6B /* IBANConverter.swift */; };
+		CAE2FD0D1B10D59100C16C6B /* IBANConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD0C1B10D59100C16C6B /* IBANConverterSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		CA5451621B0FBCA5008C0594 /* InputFileConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFileConverter.swift; sourceTree = "<group>"; };
 		CA72682D1B0FA9930058D341 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		CA72682E1B0FA9930058D341 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		CAE2FD0A1B10D18E00C16C6B /* IBANConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBANConverter.swift; sourceTree = "<group>"; };
+		CAE2FD0C1B10D59100C16C6B /* IBANConverterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBANConverterSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +144,10 @@
 		CA46FDCF1B0F9DDE005CE0B2 /* IBANBICCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA46FE091B0FA0D2005CE0B2 /* BICEntrySpec.swift */,
 				CA46FDDE1B0F9E46005CE0B2 /* Fixtures */,
 				CA46FDD01B0F9DDE005CE0B2 /* Supporting Files */,
+				CA46FE091B0FA0D2005CE0B2 /* BICEntrySpec.swift */,
+				CAE2FD0C1B10D59100C16C6B /* IBANConverterSpec.swift */,
 			);
 			path = IBANBICCoreTests;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			children = (
 				CA46FDDC1B0F9E18005CE0B2 /* BICEntry.swift */,
 				CA5451621B0FBCA5008C0594 /* InputFileConverter.swift */,
+				CAE2FD0A1B10D18E00C16C6B /* IBANConverter.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE2FD0B1B10D18E00C16C6B /* IBANConverter.swift in Sources */,
 				CA46FDDD1B0F9E18005CE0B2 /* BICEntry.swift in Sources */,
 				CA5451631B0FBCA5008C0594 /* InputFileConverter.swift in Sources */,
 			);
@@ -355,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA46FE0A1B0FA0D2005CE0B2 /* BICEntrySpec.swift in Sources */,
+				CAE2FD0D1B10D59100C16C6B /* IBANConverterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

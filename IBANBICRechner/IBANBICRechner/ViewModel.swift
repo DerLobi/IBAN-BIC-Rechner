@@ -38,13 +38,19 @@ class ViewModel: NSObject {
         super.init()
         
         BLZ >- map({ [weak self] blz in
-            
+                        
             if let BICEntries = self?.BICEntries {
-                //TODO: load bic from array of entries
-                return ""
-            } else {
-                return "-"
+                
+                var entries = BICEntries.filter({
+                    $0.BLZ == blz
+                })
+                
+                let entry = entries.first
+                return entry?.BIC ?? ""
+
             }
+                        
+            return ""
         }) >- subscribeNext({ [weak self] bic in
             self!.BIC << bic
         })
@@ -56,11 +62,23 @@ class ViewModel: NSObject {
             self!.IBAN << iban
             })
         
+        loadBICs()
         
     }
     
     func loadBICs() {
-        
+        let url = NSBundle.mainBundle().URLForResource("data", withExtension: "csv")
+        if let url = url {
+            let delimiter = NSCharacterSet(charactersInString: ";")
+            var error: NSErrorPointer = nil
+            if let csv = CSV(contentsOfURL: url, delimiter: delimiter, error: error) {
+
+                BICEntries = csv.rows.map({ row in
+                    return BICEntry(fields: row)
+                })
+                
+            }
+        }
     }
     
     

@@ -19,6 +19,9 @@ class ViewModel: NSObject {
     
     var IBAN: Variable<String>
     var BIC: Variable<String>
+    var bankName: Variable<String>
+    var city: Variable<String>
+    
     
     var BICEntries: [BICEntry]?
     
@@ -28,6 +31,9 @@ class ViewModel: NSObject {
 
         IBAN = Variable<String>("")
         BIC = Variable<String>("")
+
+        bankName = Variable<String>("")
+        city = Variable<String>("")
 
         super.init()
         

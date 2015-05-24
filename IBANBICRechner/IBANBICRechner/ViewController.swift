@@ -68,5 +68,15 @@ class ViewController: UIViewController {
         bankNameLabel.font = labelFont
         cityLabel.font = labelFont
     }
+
+    @IBAction func labelLongPressed(sender: UILongPressGestureRecognizer) {
+        sender.view?.becomeFirstResponder()
+        let menuController = UIMenuController.sharedMenuController()
+        menuController.setTargetRect(sender.view!.frame, inView: sender.view!.superview!)
+        menuController.setMenuVisible(true, animated: true)
+    }
+    
+    
+    
 }
 

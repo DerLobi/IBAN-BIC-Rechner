@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CA46FD5F1B0E6BDA005CE0B2"
-               BuildableName = "IBAN BIC.app"
-               BlueprintName = "IBAN BIC"
+               BuildableName = "IBANBICRechner.app"
+               BlueprintName = "IBANBICRechner"
                ReferencedContainer = "container:IBANBICRechner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA46FD5F1B0E6BDA005CE0B2"
-            BuildableName = "IBAN BIC.app"
-            BlueprintName = "IBAN BIC"
+            BuildableName = "IBANBICRechner.app"
+            BlueprintName = "IBANBICRechner"
             ReferencedContainer = "container:IBANBICRechner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA46FD5F1B0E6BDA005CE0B2"
-            BuildableName = "IBAN BIC.app"
-            BlueprintName = "IBAN BIC"
+            BuildableName = "IBANBICRechner.app"
+            BlueprintName = "IBANBICRechner"
             ReferencedContainer = "container:IBANBICRechner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA46FD5F1B0E6BDA005CE0B2"
-            BuildableName = "IBAN BIC.app"
-            BlueprintName = "IBAN BIC"
+            BuildableName = "IBANBICRechner.app"
+            BlueprintName = "IBANBICRechner"
             ReferencedContainer = "container:IBANBICRechner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

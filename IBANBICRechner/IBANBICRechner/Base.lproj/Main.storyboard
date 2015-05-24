@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="IBAN_BIC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="IBANBICRechner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -236,244 +236,236 @@
         <!--Info View Controller-->
         <scene sceneID="j8h-La-spU">
             <objects>
-                <viewController id="ILO-hC-G6C" customClass="InfoViewController" customModule="IBAN_BIC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ILO-hC-G6C" customClass="InfoViewController" customModule="IBANBICRechner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vd6-G4-ppc"/>
                         <viewControllerLayoutGuide type="bottom" id="PD3-Ze-gBF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ht7-BX-Zql">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7h5-QZ-zUa">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="3bJ-6E-HMW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="L9l-PB-ZtI">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-9x-iJs">
-                                            <rect key="frame" x="8" y="54" width="584" height="90"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="90" id="ED6-Qf-fte"/>
-                                            </constraints>
-                                            <string key="text">IBAN BIC
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9an-T5-KDR">
+                                        <rect key="frame" x="8" y="54" width="584" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Tjp-dg-jpu"/>
+                                        </constraints>
+                                        <string key="text">IBAN BIC
 Rechner</string>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0 (123)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-sS-cS6">
-                                            <rect key="frame" x="268" y="144" width="65" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it5-tf-3Fv">
-                                            <rect key="frame" x="215" y="227" width="170" height="44"/>
-                                            <gestureRecognizers/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="TSB-89-xW2"/>
-                                            </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment>
-                                                    <string key="content">Diese app its Open-Source
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0 (123)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBq-am-gGj">
+                                        <rect key="frame" x="268" y="144" width="65" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2v-1F-jIk">
+                                        <rect key="frame" x="215" y="227" width="170" height="44"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="zHA-8l-pyI"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Diese app its Open-Source
 auf</string>
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                            <tabStops>
-                                                                <textTab alignment="left" location="28.299999237060547"/>
-                                                                <textTab alignment="left" location="56.650001525878906"/>
-                                                                <textTab alignment="left" location="85"/>
-                                                                <textTab alignment="left" location="113.34999847412109"/>
-                                                                <textTab alignment="left" location="141.69999694824219"/>
-                                                                <textTab alignment="left" location="170.05000305175781"/>
-                                                                <textTab alignment="left" location="198.39999389648438"/>
-                                                                <textTab alignment="left" location="226.75"/>
-                                                                <textTab alignment="left" location="255.10000610351562"/>
-                                                                <textTab alignment="left" location="283.45001220703125"/>
-                                                                <textTab alignment="left" location="311.79998779296875"/>
-                                                                <textTab alignment="left" location="340.14999389648438"/>
-                                                            </tabStops>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" ">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                            <tabStops>
-                                                                <textTab alignment="left" location="28.299999237060547"/>
-                                                                <textTab alignment="left" location="56.650001525878906"/>
-                                                                <textTab alignment="left" location="85"/>
-                                                                <textTab alignment="left" location="113.34999847412109"/>
-                                                                <textTab alignment="left" location="141.69999694824219"/>
-                                                                <textTab alignment="left" location="170.05000305175781"/>
-                                                                <textTab alignment="left" location="198.39999389648438"/>
-                                                                <textTab alignment="left" location="226.75"/>
-                                                                <textTab alignment="left" location="255.10000610351562"/>
-                                                                <textTab alignment="left" location="283.45001220703125"/>
-                                                                <textTab alignment="left" location="311.79998779296875"/>
-                                                                <textTab alignment="left" location="340.14999389648438"/>
-                                                            </tabStops>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="GitHub">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                            <tabStops>
-                                                                <textTab alignment="left" location="28.299999237060547"/>
-                                                                <textTab alignment="left" location="56.650001525878906"/>
-                                                                <textTab alignment="left" location="85"/>
-                                                                <textTab alignment="left" location="113.34999847412109"/>
-                                                                <textTab alignment="left" location="141.69999694824219"/>
-                                                                <textTab alignment="left" location="170.05000305175781"/>
-                                                                <textTab alignment="left" location="198.39999389648438"/>
-                                                                <textTab alignment="left" location="226.75"/>
-                                                                <textTab alignment="left" location="255.10000610351562"/>
-                                                                <textTab alignment="left" location="283.45001220703125"/>
-                                                                <textTab alignment="left" location="311.79998779296875"/>
-                                                                <textTab alignment="left" location="340.14999389648438"/>
-                                                            </tabStops>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                            <connections>
-                                                <outletCollection property="gestureRecognizers" destination="4Pp-0g-ELd" appends="YES" id="S7L-9U-ELV"/>
-                                            </connections>
-                                        </label>
-                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXq-sG-u4H">
-                                            <rect key="frame" x="235" y="173" width="131" height="44"/>
-                                            <gestureRecognizers/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="PRM-H2-4Mw"/>
-                                            </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Christian Lobach">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                            <tabStops>
-                                                                <textTab alignment="left" location="28.299999237060547"/>
-                                                                <textTab alignment="left" location="56.650001525878906"/>
-                                                                <textTab alignment="left" location="85"/>
-                                                                <textTab alignment="left" location="113.34999847412109"/>
-                                                                <textTab alignment="left" location="141.69999694824219"/>
-                                                                <textTab alignment="left" location="170.05000305175781"/>
-                                                                <textTab alignment="left" location="198.39999389648438"/>
-                                                                <textTab alignment="left" location="226.75"/>
-                                                                <textTab alignment="left" location="255.10000610351562"/>
-                                                                <textTab alignment="left" location="283.45001220703125"/>
-                                                                <textTab alignment="left" location="311.79998779296875"/>
-                                                                <textTab alignment="left" location="340.14999389648438"/>
-                                                            </tabStops>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                            <connections>
-                                                <outletCollection property="gestureRecognizers" destination="YOO-DU-AzK" appends="YES" id="L1U-QX-bGy"/>
-                                            </connections>
-                                        </label>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SD8-9T-IqN">
-                                            <rect key="frame" x="0.0" y="330" width="600" height="270"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <prototypes>
-                                                <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="license" textLabel="qne-0h-3Es" style="IBUITableViewCellStyleDefault" id="zE7-d7-kph">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28.299999237060547"/>
+                                                            <textTab alignment="left" location="56.650001525878906"/>
+                                                            <textTab alignment="left" location="85"/>
+                                                            <textTab alignment="left" location="113.34999847412109"/>
+                                                            <textTab alignment="left" location="141.69999694824219"/>
+                                                            <textTab alignment="left" location="170.05000305175781"/>
+                                                            <textTab alignment="left" location="198.39999389648438"/>
+                                                            <textTab alignment="left" location="226.75"/>
+                                                            <textTab alignment="left" location="255.10000610351562"/>
+                                                            <textTab alignment="left" location="283.45001220703125"/>
+                                                            <textTab alignment="left" location="311.79998779296875"/>
+                                                            <textTab alignment="left" location="340.14999389648438"/>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28.299999237060547"/>
+                                                            <textTab alignment="left" location="56.650001525878906"/>
+                                                            <textTab alignment="left" location="85"/>
+                                                            <textTab alignment="left" location="113.34999847412109"/>
+                                                            <textTab alignment="left" location="141.69999694824219"/>
+                                                            <textTab alignment="left" location="170.05000305175781"/>
+                                                            <textTab alignment="left" location="198.39999389648438"/>
+                                                            <textTab alignment="left" location="226.75"/>
+                                                            <textTab alignment="left" location="255.10000610351562"/>
+                                                            <textTab alignment="left" location="283.45001220703125"/>
+                                                            <textTab alignment="left" location="311.79998779296875"/>
+                                                            <textTab alignment="left" location="340.14999389648438"/>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="GitHub">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28.299999237060547"/>
+                                                            <textTab alignment="left" location="56.650001525878906"/>
+                                                            <textTab alignment="left" location="85"/>
+                                                            <textTab alignment="left" location="113.34999847412109"/>
+                                                            <textTab alignment="left" location="141.69999694824219"/>
+                                                            <textTab alignment="left" location="170.05000305175781"/>
+                                                            <textTab alignment="left" location="198.39999389648438"/>
+                                                            <textTab alignment="left" location="226.75"/>
+                                                            <textTab alignment="left" location="255.10000610351562"/>
+                                                            <textTab alignment="left" location="283.45001220703125"/>
+                                                            <textTab alignment="left" location="311.79998779296875"/>
+                                                            <textTab alignment="left" location="340.14999389648438"/>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzC-CE-XsP">
+                                        <rect key="frame" x="235" y="173" width="131" height="44"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Mb7-th-uku"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Christian Lobach">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28.299999237060547"/>
+                                                            <textTab alignment="left" location="56.650001525878906"/>
+                                                            <textTab alignment="left" location="85"/>
+                                                            <textTab alignment="left" location="113.34999847412109"/>
+                                                            <textTab alignment="left" location="141.69999694824219"/>
+                                                            <textTab alignment="left" location="170.05000305175781"/>
+                                                            <textTab alignment="left" location="198.39999389648438"/>
+                                                            <textTab alignment="left" location="226.75"/>
+                                                            <textTab alignment="left" location="255.10000610351562"/>
+                                                            <textTab alignment="left" location="283.45001220703125"/>
+                                                            <textTab alignment="left" location="311.79998779296875"/>
+                                                            <textTab alignment="left" location="340.14999389648438"/>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-Qe-Jdr">
+                                        <rect key="frame" x="0.0" y="330" width="600" height="270"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="license" textLabel="yUv-Hy-zro" style="IBUITableViewCellStyleDefault" id="8hO-vz-3L1">
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8hO-vz-3L1" id="7Ah-ef-rvi">
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zE7-d7-kph" id="lNP-zM-fvt">
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qne-0h-3Es">
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                            </prototypes>
-                                            <connections>
-                                                <outlet property="dataSource" destination="ILO-hC-G6C" id="dS6-70-OXW"/>
-                                                <outlet property="delegate" destination="ILO-hC-G6C" id="RW1-L2-54j"/>
-                                            </connections>
-                                        </tableView>
-                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afW-wB-g5A">
-                                            <rect key="frame" x="148" y="299" width="306" height="17"/>
-                                            <gestureRecognizers/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="BGl-Hl-2Fg"/>
-                                            </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="IBAN BIC Rechner nutzt folgende Komponenten:">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                            <tabStops>
-                                                                <textTab alignment="left" location="28.299999237060547"/>
-                                                                <textTab alignment="left" location="56.650001525878906"/>
-                                                                <textTab alignment="left" location="85"/>
-                                                                <textTab alignment="left" location="113.34999847412109"/>
-                                                                <textTab alignment="left" location="141.69999694824219"/>
-                                                                <textTab alignment="left" location="170.05000305175781"/>
-                                                                <textTab alignment="left" location="198.39999389648438"/>
-                                                                <textTab alignment="left" location="226.75"/>
-                                                                <textTab alignment="left" location="255.10000610351562"/>
-                                                                <textTab alignment="left" location="283.45001220703125"/>
-                                                                <textTab alignment="left" location="311.79998779296875"/>
-                                                                <textTab alignment="left" location="340.14999389648438"/>
-                                                            </tabStops>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="BGl-Hl-2Fg"/>
-                                                </mask>
-                                            </variation>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="SD8-9T-IqN" secondAttribute="bottom" id="151-mt-Vtq"/>
-                                        <constraint firstAttribute="trailing" secondItem="5cJ-9x-iJs" secondAttribute="trailing" constant="8" id="8Nv-SA-R9D"/>
-                                        <constraint firstAttribute="trailing" secondItem="SD8-9T-IqN" secondAttribute="trailing" id="BDF-hC-orO"/>
-                                        <constraint firstAttribute="centerX" secondItem="it5-tf-3Fv" secondAttribute="centerX" id="CPJ-IB-BuI"/>
-                                        <constraint firstAttribute="centerX" secondItem="afW-wB-g5A" secondAttribute="centerX" constant="-0.5" id="Dnc-P6-DHt"/>
-                                        <constraint firstItem="SD8-9T-IqN" firstAttribute="leading" secondItem="L9l-PB-ZtI" secondAttribute="leading" id="EMr-Ho-Tjh"/>
-                                        <constraint firstItem="5cJ-9x-iJs" firstAttribute="top" secondItem="L9l-PB-ZtI" secondAttribute="top" constant="54" id="JbL-RN-ibw"/>
-                                        <constraint firstItem="rfU-sS-cS6" firstAttribute="top" secondItem="5cJ-9x-iJs" secondAttribute="bottom" id="LOV-nZ-RZh"/>
-                                        <constraint firstAttribute="centerX" secondItem="rfU-sS-cS6" secondAttribute="centerX" constant="-0.5" id="LeH-7Z-Ccn"/>
-                                        <constraint firstItem="wXq-sG-u4H" firstAttribute="top" secondItem="rfU-sS-cS6" secondAttribute="bottom" constant="8" id="UQy-GK-fwN"/>
-                                        <constraint firstItem="SD8-9T-IqN" firstAttribute="top" secondItem="afW-wB-g5A" secondAttribute="bottom" constant="14" id="fQv-eF-Vgg"/>
-                                        <constraint firstItem="afW-wB-g5A" firstAttribute="top" secondItem="it5-tf-3Fv" secondAttribute="bottom" constant="28" id="kQ8-od-nZv"/>
-                                        <constraint firstAttribute="centerX" secondItem="wXq-sG-u4H" secondAttribute="centerX" id="mwm-pm-xgh"/>
-                                        <constraint firstItem="it5-tf-3Fv" firstAttribute="top" secondItem="wXq-sG-u4H" secondAttribute="bottom" constant="10" id="nMZ-O9-5Oh"/>
-                                        <constraint firstItem="5cJ-9x-iJs" firstAttribute="leading" secondItem="L9l-PB-ZtI" secondAttribute="leading" constant="8" id="xTF-6z-291"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yUv-Hy-zro">
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="JXG-6V-hrP" kind="show" id="lAa-Is-h34"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ILO-hC-G6C" id="3Ps-tZ-9ei"/>
+                                            <outlet property="delegate" destination="ILO-hC-G6C" id="5cP-nc-0g4"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPm-Vh-TAh">
+                                        <rect key="frame" x="148" y="299" width="306" height="17"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ocA-TG-udy"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="IBAN BIC Rechner nutzt folgende Komponenten:">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28.299999237060547"/>
+                                                            <textTab alignment="left" location="56.650001525878906"/>
+                                                            <textTab alignment="left" location="85"/>
+                                                            <textTab alignment="left" location="113.34999847412109"/>
+                                                            <textTab alignment="left" location="141.69999694824219"/>
+                                                            <textTab alignment="left" location="170.05000305175781"/>
+                                                            <textTab alignment="left" location="198.39999389648438"/>
+                                                            <textTab alignment="left" location="226.75"/>
+                                                            <textTab alignment="left" location="255.10000610351562"/>
+                                                            <textTab alignment="left" location="283.45001220703125"/>
+                                                            <textTab alignment="left" location="311.79998779296875"/>
+                                                            <textTab alignment="left" location="340.14999389648438"/>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ocA-TG-udy"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lzC-CE-XsP" firstAttribute="top" secondItem="nBq-am-gGj" secondAttribute="bottom" constant="8" id="4wk-XG-upa"/>
+                                    <constraint firstAttribute="centerX" secondItem="lzC-CE-XsP" secondAttribute="centerX" id="5tr-qi-GB1"/>
+                                    <constraint firstItem="t8Y-Qe-Jdr" firstAttribute="top" secondItem="PPm-Vh-TAh" secondAttribute="bottom" constant="14" id="8JM-Yz-Tbu"/>
+                                    <constraint firstItem="a2v-1F-jIk" firstAttribute="top" secondItem="lzC-CE-XsP" secondAttribute="bottom" constant="10" id="BJV-jC-d3p"/>
+                                    <constraint firstAttribute="centerX" secondItem="PPm-Vh-TAh" secondAttribute="centerX" constant="-0.5" id="EK0-OQ-MZl"/>
+                                    <constraint firstItem="9an-T5-KDR" firstAttribute="leading" secondItem="3bJ-6E-HMW" secondAttribute="leading" constant="8" id="Exa-zq-KlA"/>
+                                    <constraint firstAttribute="trailing" secondItem="t8Y-Qe-Jdr" secondAttribute="trailing" id="Jjo-fm-5Fo"/>
+                                    <constraint firstItem="9an-T5-KDR" firstAttribute="top" secondItem="3bJ-6E-HMW" secondAttribute="top" constant="54" id="LNJ-4u-dgk"/>
+                                    <constraint firstAttribute="trailing" secondItem="9an-T5-KDR" secondAttribute="trailing" constant="8" id="Npd-Y1-EFo"/>
+                                    <constraint firstItem="nBq-am-gGj" firstAttribute="top" secondItem="9an-T5-KDR" secondAttribute="bottom" id="QQE-Os-pIj"/>
+                                    <constraint firstAttribute="centerX" secondItem="a2v-1F-jIk" secondAttribute="centerX" id="TeO-3l-1vr"/>
+                                    <constraint firstAttribute="centerX" secondItem="nBq-am-gGj" secondAttribute="centerX" constant="-0.5" id="lae-s3-WJf"/>
+                                    <constraint firstAttribute="bottom" secondItem="t8Y-Qe-Jdr" secondAttribute="bottom" id="mZD-36-kMj"/>
+                                    <constraint firstItem="t8Y-Qe-Jdr" firstAttribute="leading" secondItem="3bJ-6E-HMW" secondAttribute="leading" id="waf-s2-he9"/>
+                                    <constraint firstItem="PPm-Vh-TAh" firstAttribute="top" secondItem="a2v-1F-jIk" secondAttribute="bottom" constant="28" id="z6F-rj-mkl"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="PD3-Ze-gBF" firstAttribute="top" secondItem="7h5-QZ-zUa" secondAttribute="bottom" id="9j6-wA-Y1d"/>
-                            <constraint firstItem="7h5-QZ-zUa" firstAttribute="leading" secondItem="ht7-BX-Zql" secondAttribute="leading" id="aWO-Mz-vLs"/>
-                            <constraint firstAttribute="trailing" secondItem="7h5-QZ-zUa" secondAttribute="trailing" id="tgf-FA-g52"/>
-                            <constraint firstItem="7h5-QZ-zUa" firstAttribute="top" secondItem="vd6-G4-ppc" secondAttribute="bottom" constant="-64" id="yEh-gv-hPb"/>
+                            <constraint firstAttribute="trailing" secondItem="3bJ-6E-HMW" secondAttribute="trailing" id="8O5-jA-T03"/>
+                            <constraint firstItem="3bJ-6E-HMW" firstAttribute="top" secondItem="vd6-G4-ppc" secondAttribute="bottom" id="dZ2-aN-uis"/>
+                            <constraint firstItem="PD3-Ze-gBF" firstAttribute="top" secondItem="3bJ-6E-HMW" secondAttribute="bottom" constant="-64" id="s4K-zG-mDR"/>
+                            <constraint firstItem="3bJ-6E-HMW" firstAttribute="leading" secondItem="ht7-BX-Zql" secondAttribute="leading" id="u39-9i-jJx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rPJ-r0-psp">
@@ -485,7 +477,8 @@ auf</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="versionLabel" destination="rfU-sS-cS6" id="h7O-sP-ko7"/>
+                        <outlet property="tableView" destination="t8Y-Qe-Jdr" id="nYe-KE-zDR"/>
+                        <outlet property="versionLabel" destination="nBq-am-gGj" id="s5B-ts-E3W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JE4-U0-z3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -502,14 +495,52 @@ auf</string>
             </objects>
             <point key="canvasLocation" x="1962" y="287"/>
         </scene>
+        <!--License Details View Controller-->
+        <scene sceneID="RVc-Oh-dJa">
+            <objects>
+                <viewController id="JXG-6V-hrP" customClass="LicenseDetailsViewController" customModule="IBANBICRechner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fhf-Vp-R30"/>
+                        <viewControllerLayoutGuide type="bottom" id="6oc-D8-InB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5r0-EM-Xhh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-UH-0zh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xIa-UH-0zh" firstAttribute="top" secondItem="Fhf-Vp-R30" secondAttribute="bottom" id="H7T-rH-wxs"/>
+                            <constraint firstAttribute="trailing" secondItem="xIa-UH-0zh" secondAttribute="trailing" id="IoC-K2-ygl"/>
+                            <constraint firstItem="xIa-UH-0zh" firstAttribute="leading" secondItem="5r0-EM-Xhh" secondAttribute="leading" id="W4z-yb-6Ww"/>
+                            <constraint firstItem="6oc-D8-InB" firstAttribute="top" secondItem="xIa-UH-0zh" secondAttribute="bottom" id="hH7-Vd-5zj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="xIa-UH-0zh" id="Wk3-Bu-wme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3r2-4q-qt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642" y="287"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tT7-un-fPf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EtV-Jr-HBx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wuz-82-Lbh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wuz-82-Lbh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

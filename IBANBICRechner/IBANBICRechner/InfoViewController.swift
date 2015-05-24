@@ -12,17 +12,22 @@ class InfoViewController: UIViewController {
 
     @IBOutlet weak var versionLabel: UILabel!
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var viewModel: InfoViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         viewModel = InfoViewModel()
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
-
-        navigationController?.navigationBar.shadowImage = UIImage()
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let cell = sender as! UITableViewCell
+        let index = tableView.indexPathForCell(cell)?.row
+        
+        let details = segue.destinationViewController as! LicenseDetailsViewController
+        details.license = viewModel?.allLicenses()[index!]
+    }
     
     @IBAction func doneTapped(sender: AnyObject) {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
@@ -32,7 +37,8 @@ class InfoViewController: UIViewController {
         UIApplication.sharedApplication().openURL(viewModel!.websiteURL)
     }
     
-    @IBAction func openGitHub(sender: AnyObject) {        UIApplication.sharedApplication().openURL(viewModel!.githubURL)
+    @IBAction func openGitHub(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(viewModel!.githubURL)
     }
 }
 
@@ -50,5 +56,8 @@ extension InfoViewController: UITableViewDataSource {
 }
 
 extension InfoViewController: UITableViewDelegate {
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
 }
+

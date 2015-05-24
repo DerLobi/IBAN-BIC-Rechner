@@ -21,6 +21,7 @@
 		CAE2FD0F1B111A1000C16C6B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD0E1B111A1000C16C6B /* InfoViewController.swift */; };
 		CAE2FD111B1127A100C16C6B /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD101B1127A100C16C6B /* InfoViewModel.swift */; };
 		CAE2FD131B112A9800C16C6B /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD121B112A9800C16C6B /* License.swift */; };
+		CAE2FD151B122C1600C16C6B /* LicenseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2FD141B122C1600C16C6B /* LicenseDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		CAE2FD0E1B111A1000C16C6B /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		CAE2FD101B1127A100C16C6B /* InfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		CAE2FD121B112A9800C16C6B /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		CAE2FD141B122C1600C16C6B /* LicenseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				CA46FD8E1B0E7029005CE0B2 /* Views */,
 				CAE2FD101B1127A100C16C6B /* InfoViewModel.swift */,
 				CAE2FD121B112A9800C16C6B /* License.swift */,
+				CAE2FD141B122C1600C16C6B /* LicenseDetailsViewController.swift */,
 			);
 			path = IBANBICRechner;
 			sourceTree = "<group>";
@@ -228,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA46FD5F1B0E6BDA005CE0B2 /* IBAN BIC */ = {
+		CA46FD5F1B0E6BDA005CE0B2 /* IBANBICRechner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA46FD7F1B0E6BDB005CE0B2 /* Build configuration list for PBXNativeTarget "IBAN BIC" */;
+			buildConfigurationList = CA46FD7F1B0E6BDB005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICRechner" */;
 			buildPhases = (
 				FB14EF79D8DD92C231B5ABE5 /* Check Pods Manifest.lock */,
 				CA46FD5C1B0E6BDA005CE0B2 /* Sources */,
@@ -245,7 +248,7 @@
 			dependencies = (
 				CADF91861B0FAD2E00D65731 /* PBXTargetDependency */,
 			);
-			name = "IBAN BIC";
+			name = IBANBICRechner;
 			productName = IBANBICRechner;
 			productReference = CA46FD601B0E6BDA005CE0B2 /* IBANBICRechner.app */;
 			productType = "com.apple.product-type.application";
@@ -305,7 +308,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				CA46FD5F1B0E6BDA005CE0B2 /* IBAN BIC */,
+				CA46FD5F1B0E6BDA005CE0B2 /* IBANBICRechner */,
 				CA46FD741B0E6BDB005CE0B2 /* IBANBICRechnerTests */,
 			);
 		};
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE2FD111B1127A100C16C6B /* InfoViewModel.swift in Sources */,
+				CAE2FD151B122C1600C16C6B /* LicenseDetailsViewController.swift in Sources */,
 				CA46FD681B0E6BDA005CE0B2 /* ViewController.swift in Sources */,
 				CAE2FD071B0FDCDF00C16C6B /* ViewModel.swift in Sources */,
 				CAE2FD0F1B111A1000C16C6B /* InfoViewController.swift in Sources */,
@@ -431,7 +435,7 @@
 /* Begin PBXTargetDependency section */
 		CA46FD771B0E6BDB005CE0B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CA46FD5F1B0E6BDA005CE0B2 /* IBAN BIC */;
+			target = CA46FD5F1B0E6BDA005CE0B2 /* IBANBICRechner */;
 			targetProxy = CA46FD761B0E6BDB005CE0B2 /* PBXContainerItemProxy */;
 		};
 		CADF91861B0FAD2E00D65731 /* PBXTargetDependency */ = {
@@ -622,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA46FD7F1B0E6BDB005CE0B2 /* Build configuration list for PBXNativeTarget "IBAN BIC" */ = {
+		CA46FD7F1B0E6BDB005CE0B2 /* Build configuration list for PBXNativeTarget "IBANBICRechner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA46FD801B0E6BDB005CE0B2 /* Debug */,

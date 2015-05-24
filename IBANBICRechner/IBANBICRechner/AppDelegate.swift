@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setUpAppearance() {
         window?.tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor()
+        ]
     }
 
     func applicationWillResignActive(application: UIApplication) {

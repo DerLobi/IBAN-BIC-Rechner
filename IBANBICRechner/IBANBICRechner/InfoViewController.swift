@@ -19,6 +19,7 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = InfoViewModel()
+        versionLabel.text = viewModel?.versionString
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

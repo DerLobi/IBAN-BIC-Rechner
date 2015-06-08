@@ -378,6 +378,9 @@ auf</string>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="4Pp-0g-ELd" appends="YES" id="7NV-ee-0HD"/>
+                                        </connections>
                                     </label>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzC-CE-XsP">
                                         <rect key="frame" x="235" y="173" width="131" height="44"/>
@@ -410,6 +413,9 @@ auf</string>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YOO-DU-AzK" appends="YES" id="W4n-1Y-Al9"/>
+                                        </connections>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-Qe-Jdr">
                                         <rect key="frame" x="0.0" y="330" width="600" height="270"/>

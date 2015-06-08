@@ -564,6 +564,7 @@
 					"Rechner/IBANBICCore/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "IBANBICRechner/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -582,6 +583,7 @@
 					"Rechner/IBANBICCore/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "IBANBICRechner/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a1e4e2f2-57ec-4484-ad09-882fcc5fb783";

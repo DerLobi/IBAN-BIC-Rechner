@@ -302,14 +302,14 @@ Rechner</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2v-1F-jIk">
-                                        <rect key="frame" x="215" y="227" width="170" height="44"/>
+                                        <rect key="frame" x="215" y="227" width="171" height="44"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="zHA-8l-pyI"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Diese app its Open-Source
+                                                <string key="content">Diese App ist Open-Source
 auf</string>
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

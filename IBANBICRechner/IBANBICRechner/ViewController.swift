@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         viewModel = ViewModel()
         ktoTextField.becomeFirstResponder()
         
-        blzTextField.rx_text().subscribe(viewModel.BLZ)
-        ktoTextField.rx_text().subscribe(viewModel.accountNumber)
+        blzTextField.rx_text.subscribe(viewModel.BLZ)
+        ktoTextField.rx_text.subscribe(viewModel.accountNumber)
         
         ibanLabel.rx_subscribeTextTo(viewModel.IBAN)        
         bicLabel.rx_subscribeTextTo(viewModel.BIC)
